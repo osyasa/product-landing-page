@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#header {
+    border-bottom: 1px solid black;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: white;
+}
+
+#header-img {
+    height: 70px;
+    width: auto;
+}
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.4s;
+    margin: 0px 2% 0px 2%;
+}
+
+a:hover {
+    color: green;
+}
+
+.container {
+    width: 60%;
+    position: relative;
+    left: 20%;
+    margin-top: 10%;
+}
+
+.properties {
+    display: flex;
+    margin-bottom: 2%;
+}
+
+#section-3 {
+    margin-bottom: 0px;
+}
+
+.container img {
+    height: 120px;
+    width: auto;
+}
+
+#video-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.price-container {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.price-div {
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.79);
+    border-radius: 5px;
+}
+
+.price-div button {
+    border: 2px solid green;
+    height: 35px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.price-div button:hover {
+    background-color: green;
+    transition-duration: 0.4s;
+    color: white;
+}
+
+hr {
+    width: 75%;
+}
+
+#mail-div {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#form {
+    display: relative;
+}
+
+#email {
+    width: 50%;
+    height: 40px;
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#submit {
+    width: 90px;
+    height: 40px;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+#submit:hover {
+    background-color: green;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+footer {
+    display: flex;
+}
+
+footer nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.8em;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+@media (max-width: 1061px) {
+    .container {
+        width: 90%;
+        left: 5%;
+    }
+}
+
+@media (max-width: 703px) {
+    .container {
+        width: 96%;
+        left: 2%;
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 423px) {
+    .price-container {
+        display: block;
+    }
+    .price-div h3 {
+        padding-top: 20px;
+    }
+}
+
